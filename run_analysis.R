@@ -52,10 +52,10 @@ unzip("./data/dataset.zip",exdir="./data") ##extracting the dataset from zipfile
         ##cleaning all the special characters from variables' name list [End]        
         
         ##assigning descriptive variables' names (step 4) [START]
-        featuresData<-gsub("tB","time_B",featuresData) 
-        featuresData<-gsub("fB","freq_B",featuresData)
-        featuresData<-gsub("tG","time_G",featuresData)
-        featuresData<-gsub("fG","freq_G",featuresData)
+        featuresData<-gsub("tB","avg_time_B",featuresData) 
+        featuresData<-gsub("fB","avg_freq_B",featuresData)
+        featuresData<-gsub("tG","avg_time_G",featuresData)
+        featuresData<-gsub("fG","avg_freq_G",featuresData)
         ##assigning descriptive variables' names (step 4)  [END]
         
         colnames(trainTestData)<-featuresData
